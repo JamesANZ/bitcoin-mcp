@@ -2,6 +2,10 @@
 
 A Model Context Protocol (MCP) server that provides real-time Bitcoin blockchain data by querying the [mempool.space](https://mempool.space) API.
 
+<a href="https://glama.ai/mcp/servers/@JamesANZ/bitcoin-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@JamesANZ/bitcoin-mcp/badge" alt="Bitcoin Server MCP server" />
+</a>
+
 ## Features
 
 This MCP server offers five specialized tools for querying Bitcoin blockchain data:
