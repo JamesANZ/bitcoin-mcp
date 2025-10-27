@@ -106,23 +106,90 @@ Get information about a specific Bitcoin block.
 
 ## Installation
 
-1. Clone this repository:
+### Quick Setup (Recommended)
 
+1. Install the package globally:
 ```bash
-git clone <repository-url>
+npm install -g @jamesanz/bitcoin-mcp
+```
+
+2. Run the automated setup script:
+```bash
+# For Claude Desktop
+npx @jamesanz/bitcoin-mcp setup claude
+
+# Or show manual instructions
+npx @jamesanz/bitcoin-mcp setup manual
+```
+
+3. Restart your MCP client (e.g., Claude Desktop)
+
+### Manual Setup
+
+If the automated setup doesn't work, you can configure manually:
+
+#### For Claude Desktop
+
+1. Install the package:
+```bash
+npm install -g @jamesanz/bitcoin-mcp
+```
+
+2. Add to your Claude Desktop configuration file:
+
+**macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+**Linux**: `~/.config/claude/claude_desktop_config.json`
+**Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
+
+```json
+{
+  "mcpServers": {
+    "bitcoin-mcp": {
+      "command": "npx",
+      "args": ["@jamesanz/bitcoin-mcp"]
+    }
+  }
+}
+```
+
+3. Restart Claude Desktop
+
+#### For Other MCP Clients
+
+1. Install the package:
+```bash
+npm install -g @jamesanz/bitcoin-mcp
+```
+
+2. Configure your MCP client to use:
+   - **Command**: `npx`
+   - **Args**: `["@jamesanz/bitcoin-mcp"]`
+
+3. Restart your MCP client
+
+### Development Setup
+
+If you want to run from source:
+
+1. Clone this repository:
+```bash
+git clone https://github.com/JamesANZ/bitcoin-mcp.git
 cd bitcoin-mcp
 ```
 
 2. Install dependencies:
-
 ```bash
 npm install
 ```
 
 3. Build the project:
-
 ```bash
 npm run build
+```
+
+4. Run the setup script:
+```bash
+npm run setup claude
 ```
 
 ## Usage

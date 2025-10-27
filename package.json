@@ -7,12 +7,14 @@
   },
   "scripts": {
     "build": "tsc && chmod 755 build/index.js",
-    "start": "node build/index.js"
+    "start": "node build/index.js",
+    "setup": "node setup.js"
   },
   "files": [
     "build",
     "README.md",
-    "LICENSE.md"
+    "LICENSE.md",
+    "setup.js"
   ],
   "main": "build/index.js",
   "keywords": [
