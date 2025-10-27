@@ -6,16 +6,34 @@
     "bitcoin-mcp": "./build/index.js"
   },
   "scripts": {
-    "build": "tsc && chmod 755 build/index.js"
+    "build": "tsc && chmod 755 build/index.js",
+    "start": "node build/index.js"
   },
   "files": [
-    "build"
+    "build",
+    "README.md",
+    "LICENSE.md"
   ],
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "main": "build/index.js",
+  "keywords": [
+    "bitcoin",
+    "mcp",
+    "model-context-protocol",
+    "blockchain",
+    "mempool",
+    "bitcoin-api"
+  ],
+  "author": "James Sangalli",
+  "license": "MIT",
+  "description": "A Model Context Protocol (MCP) server that provides real-time Bitcoin blockchain data by querying the mempool.space API",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JamesANZ/bitcoin-mcp.git"
+  },
+  "homepage": "https://github.com/JamesANZ/bitcoin-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/JamesANZ/bitcoin-mcp/issues"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.15.0",
     "superagent": "^10.2.2",
