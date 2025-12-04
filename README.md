@@ -112,6 +112,10 @@ You can install this MCP server directly in Cursor using the one-click install l
 
 **🔗 [Install in Cursor](cursor://anysphere.cursor-deeplink/mcp/install?name=bitcoin-mcp&config=eyJiaXRjb2luLW1jcCI6eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIkBqYW1lc2Fuei9iaXRjb2luLW1jcCJdfX0=)**
 
+```
+cursor://anysphere.cursor-deeplink/mcp/install?name=bitcoin-mcp&config=eyJiaXRjb2luLW1jcCI6eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIkBqYW1lc2Fuei9iaXRjb2luLW1jcCJdfX0=
+```
+
 This will automatically configure the MCP server using `npx`. No API keys are required.
 
 ### Quick Setup (Recommended)
